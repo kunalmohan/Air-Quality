@@ -1,0 +1,157 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(rgba(192, 96, 96, 0.2),rgba(0,0,0,0.4)), url("back1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main{
+    width: 70%;
+    margin: 3em 0 3em 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    display: none;
+}
+
+#heading{
+    height: 130px;
+    /*border-bottom: 1px solid black;*/
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    font-size: 4.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Pacifico";
+    color: rgb(189, 189, 185);
+}
+
+#content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+#content .gas{
+    display: flex;
+    font-family: "Basic";
+    padding: 1em 0 1em 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    /*border-bottom: 1px solid grey;*/
+}
+
+.gas-name{
+    width: 20%;
+    text-align: center;
+}
+
+.gas-amt{
+    width: 20%;
+    text-align: center;
+}
+
+.gas-graph{
+    display: none;
+}
+
+iframe{
+    background-color: black;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.disp-details{
+    cursor: pointer;
+}
+
+#foot{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: "Baloo";
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+}
+
+#preloader{
+    display: flex;
+    margin-top: 5em;
+    height: 400px;
+    margin-bottom: 8em;
+    width: 80%;
+    flex-direction: column;
+    background-color: rgb(133, 122, 122);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.loadtext{
+    font-size: 3.5em;
+    color: rgb(9, 59, 7);
+}
+
+#preload-cont{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dots{
+    height: 15px;
+    width: 15px;
+    background-color: beige;
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 1080px) {
+    #main{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #main{
+        width: 90%;
+    }
+    .loadtext{
+        font-size: 3em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .details{
+        display: none;
+    }
+    .gas-name{
+        width: 40%;
+    }
+    .gas-amt{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main{
+        width: 95%;
+    }
+}
